@@ -7,8 +7,8 @@ enabled: true
 entry_point: wap.py
 parameters:
      ImageId:
-        type: string
-        description: Enter the AWS EC2 Image ID
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
         required: true 
         position: 0
       
