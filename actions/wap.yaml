@@ -11,4 +11,10 @@ parameters:
         description: "Enter the AWS EC2 Image ID"
         required: true 
         position: 0
+        
+      InstanceType:
+         type: "string"
+         description: "Enter the AWS instance type"
+         required: true 
+         position: 1
   
