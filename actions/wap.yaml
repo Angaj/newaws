@@ -11,15 +11,4 @@ parameters:
         description: "Enter the AWS EC2 Image ID"
         required: true 
         position: 0
-      
-      InstanceType:
-        type: "string"
-    	description: "type of instance"
-    	required: true
-        position: 1
-
-      KeyName:
-    	type: "string"
-    	description: "SSH key to use during intial instance creation"
-    	required: true
-        position: 2
+  
