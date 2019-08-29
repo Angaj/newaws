@@ -8,8 +8,15 @@ entry_point: action.py
 parameters:
      InstanceIds:
         type: "string"
-        description: "Enter the AWS EC2 Image ID"
+        description: "Enter the AWS EC2 Instance ID"
         required: true 
         position: 0
+        
+     InstanceType:
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
+        default: "t2.micro"
+        required: true 
+        position: 1        
       
      
