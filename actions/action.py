@@ -6,13 +6,13 @@ import urllib3
 from st2common.runners.base_action import Action
 
 urllib3.disable_warnings()
-ec2 = boto3.resource('ec2')
+ec2 = boto3.client('ec2')
 
 class MyEchoAction(Action):
 	def run(self,InstanceIds,action):
 		action = action.upper()
 		if action == 'START':
-			ec2.run_instances(InstanceIds=[InstanceIds])
+			ec2.start_instances(InstanceIds=[InstanceIds])
 			print("VM started successfully......")
 
 		elif action == 'STOP':
