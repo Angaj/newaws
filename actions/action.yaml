@@ -2,28 +2,19 @@
 name: task_3
 pack: create_vm
 runner_type: "python-script"
-description: action create instance!
+description: action start/stop/restart  instance!
 enabled: true
 entry_point: action.py
 parameters:
-     ImageId:
+     InstanceIds:
         type: string
-        description: Enter the AWS EC2 Image ID
+        description: Enter the AWS EC2 Instance ID
         required: true 
-        position: 1
+        position: 0
       
-      InstanceType:
+      action:
         type: string
-        description: Enter the AWS EC2 instance type
+        description: Enter the Start/Stop/Restart action
         required: true 
-	default: "t2.micro"
-        position: 1
-
-
-     KeyName:
-        type: string
-        description: Enter the AWS EC2 Image Key-Name
-        required: true 
-	default: "ec2-keypair"
         position: 1
       
