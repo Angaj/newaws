@@ -10,7 +10,7 @@ ec2 = boto3.resource('ec2')
 
 class MyEchoAction(Action):
 	def run(self,InstanceIds,action):
-		action=action
+		action = action.upper()
 		if action == 'START':
 			ec2.start_instances(InstanceIds=[InstanceIds])
 			print("VM started successfully......")
