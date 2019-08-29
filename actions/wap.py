@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import sys
-import requests as req
+sys.path.append('/usr/local/lib/python2.7/dist-packages')
 import boto3
+import urllib3
 from st2common.runners.base_action import Action
 
+urllib3.disable_warnings()
 ec2 = boto3.resource('ec2')
 
 class MyEchoAction(Action):
