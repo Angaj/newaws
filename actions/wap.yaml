@@ -1,5 +1,5 @@
 ---
-name: task_3
+name: create_instance
 pack: create_vm
 runner_type: "python-script"
 description: action create instance!
