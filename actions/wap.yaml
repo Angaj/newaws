@@ -15,15 +15,15 @@ parameters:
       InstanceType:
         type: string
         description: Enter the AWS EC2 instance type
-        required: true 
 	default: "t2.micro"
+        required: true 
         position: 1
 
 
      KeyName:
         type: string
         description: Enter the AWS EC2 Image Key-Name
-        required: true 
 	default: "ec2-keypair"
+        required: true 
         position: 2
       
