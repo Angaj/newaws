@@ -18,3 +18,9 @@ parameters:
         required: true 
         position: 1
         
+     KeyName:
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
+        required: true 
+        position: 2
+        
