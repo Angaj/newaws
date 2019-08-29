@@ -16,10 +16,10 @@ parameters:
         type: "string"
     	description: "type of instance"
     	required: true
-	position: 1
+        position: 1
 
       KeyName:
     	type: "string"
     	description: "SSH key to use during intial instance creation"
     	required: true
-	position: 2
+        position: 2
