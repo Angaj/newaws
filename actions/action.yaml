@@ -7,14 +7,9 @@ enabled: true
 entry_point: action.py
 parameters:
      InstanceIds:
-        type: string
-        description: Enter the AWS EC2 Instance ID
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
         required: true 
         position: 0
       
-      action:
-        type: string
-        description: Enter the Start/Stop/Restart action
-        required: true 
-        position: 1
-      
+     
