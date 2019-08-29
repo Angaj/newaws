@@ -19,9 +19,7 @@ parameters:
         position: 1
 
 
-     KeyName:
-        type: string
-        description: Enter the AWS EC2 Image Key-Name
-	required: true
-        position: 2
-      
+      KeyName:
+    	type: "string"
+    	description: "SSH key to use during intial instance creation"
+    	required: false
