@@ -7,23 +7,22 @@ enabled: true
 entry_point: wap.py
 parameters:
      ImageId:
-        type: string
-        description: Enter the AWS EC2 Image ID
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
+        required: true 
+        position: 0
+        
+     InstanceType:
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
+        default: "t2.micro"
         required: true 
         position: 1
-      
-      InstanceType:
-        type: string
-        description: Enter the AWS EC2 instance type
-        required: true 
-	default: "t2.micro"
-        position: 1
-
-
+        
      KeyName:
-        type: string
-        description: Enter the AWS EC2 Image Key-Name
+        type: "string"
+        description: "Enter the AWS EC2 Image ID"
+        default: "ec2-keypair"
         required: true 
-	default: "ec2-keypair"
-        position: 1
-      
+        position: 2
+        
