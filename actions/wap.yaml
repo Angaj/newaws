@@ -13,13 +13,13 @@ parameters:
         position: 0
       
       InstanceType:
-        type: string
-        description: Enter the AWS EC2 instance type
-	required: false 
-        position: 1
-
+        type: "string"
+    	description: "type of instance"
+    	required: true
+	position: 1
 
       KeyName:
     	type: "string"
     	description: "SSH key to use during intial instance creation"
-    	required: false
+    	required: true
+	position: 2
