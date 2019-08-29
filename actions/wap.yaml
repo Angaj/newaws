@@ -10,7 +10,7 @@ parameters:
         type: string
         description: Enter the AWS EC2 Image ID
         required: true 
-        position: 1
+        position: 0
       
       InstanceType:
         type: string
@@ -25,5 +25,5 @@ parameters:
         description: Enter the AWS EC2 Image Key-Name
         required: true 
 	default: "ec2-keypair"
-        position: 1
+        position: 2
       
