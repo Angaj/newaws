@@ -14,8 +14,7 @@ parameters:
         
      InstanceType:
         type: "string"
-        description: "Enter the AWS EC2 Image ID"
-        default: "t2.micro"
+        description: "Enter the action to perform (START/STOP/RESTART)"
         required: true 
         position: 1        
       
