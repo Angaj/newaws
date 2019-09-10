@@ -8,6 +8,7 @@ keywords:
     - requests
     - web
     - ec2-keypair
+    - create vm
 version: 3.1.0
 python_versions:
   - "2"
